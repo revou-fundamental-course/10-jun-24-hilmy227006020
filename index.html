@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Konversi Suhu</title>
+    <link rel="stylesheet" href="/10-jun-24-hilmy227006020/css/style.css">
+</head>
+<body>
+    <img src="/10-jun-24-hilmy227006020/css/asset/sssquiggly.svg" alt="Background Image" class="background-image">
+    <div class="container">
+        <h1>Kalkulator Konversi Suhu</h1>
+        <form id="temperatureForm">
+            <div class="input-group horizontal">
+                <div class="input-item">
+                    <label for="celsius">Celsius (°C)</label>
+                    <input type="number" id="celsius" name="celsius">
+                </div>
+                <div class="input-item">
+                    <label for="fahrenheit">Fahrenheit (°F)</label>
+                    <input type="number" id="fahrenheit" name="fahrenheit">
+                </div>
+            </div>
+            <div class="input-group vertical-group">
+                <label for="result">Hasil</label>
+                <input type="text" id="result" name="result" readonly>
+            </div>
+            <div id="conversion-direction">
+                <p>Konversi dari Celsius ke Fahrenheit</p>
+            </div>
+            <div class="button-group">
+                <button type="button" onclick="convert()">Konversi</button>
+                <button type="button" onclick="reverseValues()">Reverse</button>
+            </div>
+            <div class="single-button">
+                <button type="button" onclick="resetForm()">Reset</button>
+            </div>
+            <div class="input-group vertical-group">
+                <label for="calculation">Cara Kalkulasi:</label>
+                <input type="text" id="calculation" name="calculation" readonly>
+            </div>
+        </form>
+        <div id="caption">
+            <section>
+                <h1>Cara Konversi Farenhit Ke Celcius</h1>
+                <br>
+                <p>Suhu <span><strong>S</strong></span> dalam derajat celcius (°C) sama dengan <span><strong>S</strong></span> dalam derajat farenhit (°F) dikurangi 32 dikali 9/5</p>
+                <p><span><i>S</i></span><sub>(°C)</sub>= (<span><i>S</i></span><sub>(°F)</sub> - 32) x 9/5</p>
+                <br>
+            </section>
+            <hr>
+            <section>
+                <h1>Cara Konversi Celcius Ke Farenhit</h1>
+                <br>
+                <p>Suhu <span><strong>S</strong></span> dalam derajat farenhit (°F) sama dengan <span><strong>S</strong></span> dalam derajat celcius (°C) kali 9/5 tambah 32</p>
+                <p><span><i>S</i></span><sub>(°F)</sub>= (<span><i>S</i></span><sub>(°C)</sub> x 9/5)+32</p>
+                <br>
+            </section>
+        </div>
+    </div>
+
+    <script src="/10-jun-24-hilmy227006020/js/script.js"></script>
+</body>
+</html>
